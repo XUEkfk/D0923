@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
         counText.text = "Count:" + count.ToString();
         if (count>=5)
         {
-            winText.text = "You Win"+"count"+count.ToString();
+            winText.text = "You Win"+"  "+"count "+count.ToString();
             counText.text = "";
         }
     }
