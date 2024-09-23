@@ -2403,7 +2403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae553c3554dad24aa9ad42c67869d4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 5
   counText: {fileID: 497380201}
   winText: {fileID: 1474433330}
 --- !u!54 &1855940296
