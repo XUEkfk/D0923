@@ -8,7 +8,7 @@ public class CameraController : MonoBehaviour
     public GameObject player;
     public Transform viewPoint; // 相機視角的參考點
     private Vector3 off;
-    private Vector2 mouseInput;
+    private Vector2 mouseInput;//滑鼠輸入值
     private float Y = 0f; //選轉角度
     public float mouseS = 100f; //mouse靈敏度
     private float verticalRotStore; // 垂直旋轉存儲
@@ -28,7 +28,6 @@ public class CameraController : MonoBehaviour
         //相機鏡頭旋轉
         // 累積垂直旋轉並限制範圍，避免翻轉相機
         verticalRotStore -= mouseInput.y;
-        
         verticalRotStore = Mathf.Clamp(verticalRotStore, -60f, 60f); // 限制垂直角度的範圍
     }
 
