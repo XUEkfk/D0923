@@ -1613,7 +1613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1855940294}
   viewPoint: {fileID: 1855940300}
-  mouseS: 100
+  mouseS: 5
 --- !u!4 &1084675909 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2432533796245198862, guid: d77c7d9d7ba807f4488e301b39ba6891, type: 3}
