@@ -28,10 +28,8 @@ public class CameraController : MonoBehaviour
         //相機鏡頭旋轉
         // 累積垂直旋轉並限制範圍，避免翻轉相機
         verticalRotStore -= mouseInput.y;
+        
         verticalRotStore = Mathf.Clamp(verticalRotStore, -60f, 60f); // 限制垂直角度的範圍
-
-        // 設置旋轉，根據滑鼠 X 軸旋轉角色，根據滑鼠 Y 軸旋轉視角
-        viewPoint.rotation = Quaternion.Euler(verticalRotStore, viewPoint.rotation.eulerAngles.y + mouseInput.x, 0f);
     }
 
     void LateUpdate()
